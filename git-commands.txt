@@ -1,0 +1,14 @@
+Git Command
+-- check git is working
+>> git --version
+
+-- add directory with remote (online) directory
+1. Go inside directory and Type command
+>> git init
+
+-- check if new files are inter. 
+1. set file in stage then add. Stage means ready for commit. follow these commands
+>> git status  | Expl: It will tell us tracked file or untracked file
+2. stage a file by this command
+>> git add ahsan.text
+
