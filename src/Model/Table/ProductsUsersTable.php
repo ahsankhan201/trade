@@ -28,7 +28,7 @@ class ProductsUsersTable extends Table
 
         $this->table('products_users');
         $this->displayField('id');
-        $this->primaryKey('id');
+        $this->primaryKey('products_id','users_id');
 
         $this->belongsTo('Products', [
             'foreignKey' => 'products_id',

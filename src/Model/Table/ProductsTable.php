@@ -62,6 +62,9 @@ class ProductsTable extends Table {
 
         $validator
                 ->allowEmpty('productDetail');
+        $validator
+                ->requirePresence('productLoadingIndex', 'valid', ['rule' => 'numeric'])
+                ->notEmpty('productLoadingIndex');
 
         $validator
                 ->add('productStatus', 'valid', ['rule' => 'numeric'])

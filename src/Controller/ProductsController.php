@@ -22,7 +22,7 @@ class ProductsController extends AppController {
         $related_product = $this->Products->find('all', ['conditions' => ['products.categoreys_id =' => $product_cat_id->categoreys_id, 'products.id !=' => $id]]);
 
         if ($related_product->isEmpty()) {
-
+            // get related product from product model
             $related_product = $this->Products->get_related_products($product_cat_id->categoreys_id, $id);
             //debug($product);
         }
@@ -78,7 +78,7 @@ class ProductsController extends AppController {
      */
     public function add() {
         $product = $this->Products->newEntity();
-        if ($this->request->is('post')) {
+        if ($this->request->is('post')) {            
             $product = $this->Products->patchEntity($product, $this->request->data);
             if ($this->Products->save($product)) {
                 $this->Flash->success(__('The product has been saved.'));

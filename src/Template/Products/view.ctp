@@ -21,6 +21,8 @@
             <p><?= h($product->productName) ?></p>
             <h6 class="subheader"><?= __('ProductDetail') ?></h6>
             <p><?= h($product->productDetail) ?></p>
+            <h6 class="subheader"><?= __('ProductLoadingIndex') ?></h6>
+            <p><?= h($product->productLoadingIndex) ?></p>
         </div>
         <div class="large-2 columns numbers end">
             <h6 class="subheader"><?= __('Id') ?></h6>

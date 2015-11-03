@@ -23,6 +23,7 @@
             echo $this->Form->input('productName');
             echo $this->Form->input('productPrice');
             echo $this->Form->input('productDetail');
+            echo $this->Form->input('productLoadingIndex');
             echo $this->Form->input('productStatus');
             echo $this->Form->input('productSortOrder');
             echo $this->Form->input('displayTop');

@@ -17,6 +17,7 @@
             <th><?= $this->Paginator->sort('productName') ?></th>
             <th><?= $this->Paginator->sort('productPrice') ?></th>
             <th><?= $this->Paginator->sort('productDetail') ?></th>
+            <th><?= $this->Paginator->sort('productLoadingIndex') ?></th>
             <th><?= $this->Paginator->sort('productStatus') ?></th>
             <th><?= $this->Paginator->sort('productSortOrder') ?></th>
             <th class="actions"><?= __('Actions') ?></th>
@@ -32,6 +33,7 @@
             <td><?= h($product->productName) ?></td>
             <td><?= $this->Number->format($product->productPrice) ?></td>
             <td><?= h($product->productDetail) ?></td>
+            <td><?= h($product->productLoadingIndex) ?></td>
             <td><?= $this->Number->format($product->productStatus) ?></td>
             <td><?= $this->Number->format($product->productSortOrder) ?></td>
             <td class="actions">
